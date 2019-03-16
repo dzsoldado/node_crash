@@ -29,13 +29,16 @@ const server = http.createServer((req,res)=>{
   switch(extension) {
     case ".js":
       contentType = "text/javascript";
+      break;
     case ".css":
       contentType = "text/css";
+      break;
     case ".json":
       contentType = "application/json";
+      break;
     case ".jpg":
       contentType = "image/jpg";
-    break;
+      break;
   }
 
   // Read file
